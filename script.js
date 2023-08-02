@@ -63,18 +63,19 @@ document.querySelector("#main")
 .addEventListener("click",function(dets){
     document.querySelector("img").setAttribute("src",arr[dets.target.id].storyimage) 
     document.querySelector(".full").style.display = "flex";
-    if(grow == 0){
-    setInterval(function(){
-        p.style.width = `${grow++}%`
-    },30)
-}else{
-    grow = 0;
-}
-//har 30millisecond mai width 1% badhegi toh 100% mai time lagega 30*100=3000milliseconds
-//  ,lekin end ke jerk ko hatane ke liye settimeout mai 3100 diya hai
-setTimeout(function(){
-    document.querySelector(".full").style.display = "none";
-},3100)
+        if(grow === 0){
+            setInterval(function(){
+                p.style.width = `${grow++}%`
+            },30)
+        }else{
+            grow = 0;
+        }
+        //har 30millisecond mai width 1% badhegi toh 100% mai time lagega 30*100=3000milliseconds
+        //  ,lekin end ke jerk ko hatane ke liye settimeout mai 3100 diya hai
+        setTimeout(function(){
+            document.querySelector(".full").style.display = "none";
+        },3100)
+
 })
 document.querySelector("h3")
 .addEventListener("click",function(){
@@ -96,26 +97,24 @@ document.querySelector("#redheart")
         flag = 0;
     
 })
-var arr2 = [{
-    dp : "https://i.pinimg.com/564x/ea/eb/d9/eaebd9c6dd93004fbeb22f6c2c1ed98b.jpg",
-    storypic : "https://i.pinimg.com/564x/ea/eb/d9/eaebd9c6dd93004fbeb22f6c2c1ed98b.jpg", 
-}]
-var clutter = "";
-arr2.forEach(function(elem,index){
-    clutter += ` <div class="navstory" >
-    <div  class="navdp">
-      <img id="${index}" src="${elem.dp}" alt="">
-    </div>
-</div>`
-
-document.querySelector(".instastories").innerHTML = clutter;
-})
-document.querySelector("#main")
-.addEventListener("click",function(dets){
-    document.querySelector("img").setAttribute("src",arr2[dets.target.id].storypic) 
+document.querySelector(".navdp>img")
+.addEventListener("click",function(){
+    document.querySelector("img").setAttribute("src","https://i.pinimg.com/564x/26/e6/2d/26e62d6e5372df6942498f6abca4f8f0.jpg")
     document.querySelector(".full").style.display = "flex";
+    if(grow === 0){
+        setInterval(function(){
+            p.style.width = `${grow++}%`
+        },30)
+    }else{
+        grow = 0;
+    }
+    //har 30millisecond mai width 1% badhegi toh 100% mai time lagega 30*100=3000milliseconds
+    //  ,lekin end ke jerk ko hatane ke liye settimeout mai 3100 diya hai
+    setTimeout(function(){
+        document.querySelector(".full").style.display = "none";
+    },3100)
 })
-var flag = 1;
+// var flag = 1;
 var follow = document.querySelectorAll(".follow a");
 follow.forEach(function(elem){
 elem.addEventListener("click",function(){
