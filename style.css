@@ -146,12 +146,12 @@ html,body{
     font-weight: 500;
 }
 #profile{
-    height: 1.5vw;
-    width: 1.5vw;
+    height: 2vw;
+    width: 2vw;
     border-radius: 50%;
-    background-image: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+    background-image: url(https://i.pinimg.com/564x/17/27/ea/1727ea519d60739d4d692e429d30e7f0.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 .swiper {
     width: 100%;
