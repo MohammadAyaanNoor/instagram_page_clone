@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.stories{
+
+    width: 58vw;
+    /* background-color: red; */
+    display: flex;
+    gap: 1vw;
+    padding-left: 1.4vw;
+    padding-top: 1.2vw;
+}
+.story{
+    width: 6vw;
+    height: 6vw;
+    background: linear-gradient(to top left,blue,rgb(224, 113, 33),rgb(182, 42, 66),rgb(211, 71, 211));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.dp{
+    width: 5.5vw;
+    height: 5.5vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    overflow: hidden;
+    background-color: white;
+}
+.dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.full{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 26, 26, 0.426);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+.storyplay{
+    position: absolute;
+    margin-top: 7vw;
+    height: 88vh;
+    width: 40%;
+    border-radius: 0.3vw;
+    overflow: hidden;
+}
+.timer{
+    position: absolute;
+    margin-top: 0.2vw;
+    border-radius: 1vw;
+    width: 100%;
+    height: 0.2vw;
+    overflow: hidden;
+    background-color: rgb(155, 155, 155);
+}
+.progress{
+    width: 0%;
+    height: 0.2vw;
+    background-color: rgb(254, 253, 253);
+}
+.full img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.full h3{
+    position: absolute;
+    right: 2vw;
+    top: 6vw;
+    font-size: 1.7vw;
+}
+#left{
+    margin-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-right: 5vw;
+    display: flex;
+    border-right:0.1vw solid rgba(105, 102, 102, 0.293) ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#left #image img{
+    height: 3.2vw;
+}
+#left #centernav{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: -17vw;
+
+}
+#left #centernav h2{
+    font-size: 1.2vw;
+    font-weight: 500;
+    
+}
+#left #centernav h2 i{
+    font-size: 1.7vw;
+}
+#left #more h2 i{
+    font-size: 1.7vw;
+}
+#left #centernav h2:nth-child(4){
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+#left #centernav h2:nth-child(6){
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+#left #centernav h2:nth-child(8){
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+}
+#left #more h2{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+#profile{
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+    background-size: cover;
+    background-position: top;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+    
+  }
+  .swiper-zoom-container img{
+    height: 30vw;
+    width: 40vw;
+  }
+  .swiper-button-next{
+    color: black;
+    transform: scale(0.5);
+  }
+  .swiper-button-prev{
+    color: black;
+    transform: scale(0.5);
+  }
+#post{
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    /* height: 40vw; */
+    /* background-color: red; */
+    margin-left: 12vw;
+    margin-top: 5vw;
+}
+.profilenav{
+    /* margin-top: -5vw; */
+    background-color: white;
+
+}
+.instastories{
+    display: initial;
+}
+.navstory{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top left,blue,rgb(224, 113, 33),rgb(182, 42, 66),rgb(211, 71, 211));
+}
+.navdp{
+    width: 2.7vw;
+    height: 2.7vw;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+}
+.navdp img{
+    height: 100%;
+    width: 100%;
+}
+.profilenav{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 0.5vw 0.5vw;
+}
+.profilenav h3{
+    color: black;
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+#likenav{
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw 0.8vw;
+}
+#likenav #likeleft{
+    display: flex;
+    gap: 1vw;
+}
+#likenav #likeleft i{
+    font-size: 1.9vw;
+}
+#likenav #likeright i{
+    font-size: 1.9vw;
+}
+#redheart{
+    color: red;
+    display: none;
+}
+#post h4{
+font-weight: 200;
+margin-left: 1vw;
+}
+#post #caption{
+    font-weight: 400;
+    font-size: 1.1vw;
+    margin-left: 1vw;
+}
+#post h3 span{
+    font-weight: 600;
+    padding-right: 0.3vw;
+}
+#right .profilenav{
+    margin-top: 2vw;
+}
+#right>h3{
+    font-size: 1vw;
+    font-weight: 200;
+    color: #929191;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.follow{
+    display: flex;
+    width: 25vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top:1vw ;
+    padding-bottom:1vw ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.dpname{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.navdp>img{
+    object-position: center;
+}
+.dpname>h4{
+    font-size: 1vw;
+    font-weight: 600;
+    color: black;
+
+}
+.follow a{
+    text-decoration: none;
+    color: white;
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 0.3vw 1vw;
+    
+}
+.names{
+    display: flex;
+    align-items: center;
+    /* gap: 2vw; */
+}
+.names>h5{
+    margin-left: 2vw;
+}
+.names>h5:nth-child(2){
+    margin-left: 3vw;
+}
+.names>h5:nth-child(3){
+    margin-left: 3vw;
+}
+.names>h5:nth-child(4){
+    margin-left: 3vw;
+}.names>h5:nth-child(5){
+    margin-left: 2vw;
+}.names>h5:nth-child(6){
+    margin-left: 1.5vw;
+}.names>h5:nth-child(7){
+    margin-left: 1.3vw;
+}
+.names>h5:nth-child(8){
+    margin-left: 1vw;
+}
+#sar{
+    width: 22vw;
+}
